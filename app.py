@@ -28,6 +28,7 @@ def add():
 # TODO: Implement the 'multiplication operation'
 @app.route('/api/multiply', methods=['POST'])
 def multiply():
+    # Write code here
     data_request = request.get_json()
     if (not data_request or 'number_1' not in data_request or
             'number_2' not in data_request):
