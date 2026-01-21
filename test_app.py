@@ -44,7 +44,7 @@ class TestApp(unittest.TestCase):
             "number_1": 4,
             "number_2": 5
         })
-    
+        # Send POST request to /api/multiply
         response = self.client.post('/api/multiply', data=payload,
                                     content_type='application/json')    
         self.assertEqual(response.status_code, 200)
