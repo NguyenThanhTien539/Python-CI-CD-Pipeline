@@ -52,19 +52,20 @@ def subtract():
     return jsonify({'result': result})
 
 # TODO: Implement the 'division operation'
-@app.route('/api/divide', methods=['POST'])
-def divide():
-    # Write code here
-    data_request = request.get_json()
-    if (not data_request or 'number_1' not in data_request or
-            'number_2' not in data_request):
-        return jsonify({'error': 'Invalid input'}), 400
-    number_1 = float(data_request['number_1'])
-    number_2 = float(data_request['number_2'])
-    if number_2 == 0:
-        return jsonify({'error': 'Division by zero'}), 400
-    result = number_1 / number_2
-    return jsonify({'result': result})
+# @app.route('/api/divide', methods=['POST'])
+# def divide():
+#     # Write code here
+#     data_request = request.get_json()
+#     if (not data_request or 'number_1' not in data_request or
+#             'number_2' not in data_request):
+#         return jsonify({'error': 'Invalid input'}), 400
+#     number_1 = float(data_request['number_1'])
+#     number_2 = float(data_request['number_2'])
+#     if number_2 == 0:
+#         return jsonify({'error': 'Division by zero'}), 400
+#     result = number_1 / number_2
+#     return jsonify({'result': result})
+
 
 
 
